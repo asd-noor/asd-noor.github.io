@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on asaduzzaman-noor</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on asaduzzaman-noor</description>
+    <title>Tags on Asaduzzaman Noor</title>
+    <link>https://asd-noor.github.io/tags/</link>
+    <description>Recent content in Tags on Asaduzzaman Noor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 09 Sep 2025 13:29:59 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://asd-noor.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>No-Tag</title>
-      <link>http://localhost:1313/tags/no-tag/</link>
+      <link>https://asd-noor.github.io/tags/no-tag/</link>
       <pubDate>Tue, 09 Sep 2025 13:29:59 +0600</pubDate>
-      <guid>http://localhost:1313/tags/no-tag/</guid>
+      <guid>https://asd-noor.github.io/tags/no-tag/</guid>
       <description></description>
     </item>
   </channel>
