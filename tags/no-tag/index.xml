@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>No-Tag on Asaduzzaman Noor</title>
-    <link>https://asd-noor.github.io/tags/no-tag/</link>
+    <link>http://localhost:1313/tags/no-tag/</link>
     <description>Recent content in No-Tag on Asaduzzaman Noor</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 09 Sep 2025 13:29:59 +0600</lastBuildDate>
-    <atom:link href="https://asd-noor.github.io/tags/no-tag/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/no-tag/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Demo Post</title>
-      <link>https://asd-noor.github.io/posts/demo/</link>
+      <link>http://localhost:1313/posts/demo/</link>
       <pubDate>Tue, 09 Sep 2025 13:29:59 +0600</pubDate>
-      <guid>https://asd-noor.github.io/posts/demo/</guid>
+      <guid>http://localhost:1313/posts/demo/</guid>
       <description>&lt;h1 id=&#34;first-post&#34;&gt;&#xA;  First Post&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#first-post&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Hello World!&lt;/p&gt;</description>
     </item>
   </channel>
