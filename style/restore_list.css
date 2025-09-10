@@ -1,0 +1,20 @@
+.container.list.restore-lists .markdown-content ul,
+.container.list.restore-lists ul {
+  list-style: disc !important;
+  list-style-position: outside !important;
+  margin: 1em 0 !important;
+  padding-left: 2em !important;
+}
+
+.container.list.restore-lists .markdown-content ol,
+.container.list.restore-lists ol {
+  list-style: decimal !important;
+  list-style-position: outside !important;
+  margin: 1em 0 !important;
+  padding-left: 2em !important;
+}
+
+.container.list.restore-lists .markdown-content li,
+.container.list.restore-lists li {
+  display: list-item !important;
+}

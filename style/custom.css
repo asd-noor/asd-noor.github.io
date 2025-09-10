@@ -1,0 +1,16 @@
+.restore-lists ul, .restore-lists ol {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.restore-lists ul li, .restore-lists ol li {
+  display: list-item;
+}
+
+.restore-lists ul ul, .restore-lists ul ol,
+.restore-lists ol ul, .restore-lists ol ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
