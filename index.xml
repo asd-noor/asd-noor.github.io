@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asaduzzaman Noor</title><link>https://asd-noor.github.io/</link><description>Recent content on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Sep 2025 13:29:59 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Demo Post</title><link>https://asd-noor.github.io/posts/demo/</link><pubDate>Tue, 09 Sep 2025 13:29:59 +0600</pubDate><guid>https://asd-noor.github.io/posts/demo/</guid><description>&lt;h1 id="first-post"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asaduzzaman Noor</title><link>https://asd-noor.github.io/</link><description>Recent content on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 12 Sep 2025 15:01:26 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Using iterators in Go</title><link>https://asd-noor.github.io/posts/fun_with_iter_in_go/</link><pubDate>Fri, 12 Sep 2025 15:01:26 +0600</pubDate><guid>https://asd-noor.github.io/posts/fun_with_iter_in_go/</guid><description>&lt;h1 id="iterators-in-go"&gt;
+ Iterators in Go
+ &lt;a class="heading-link" href="#iterators-in-go"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Ref:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;file:///home/noor/Builds/goplay/listop/lib.go&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://xnacly.me/posts/2024/fun-with-iterators/" class="external-link" target="_blank" rel="noopener"&gt;https://xnacly.me/posts/2024/fun-with-iterators/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Functional pipeline in Go</title><link>https://asd-noor.github.io/posts/functional_pipeline_go/</link><pubDate>Fri, 12 Sep 2025 14:57:36 +0600</pubDate><guid>https://asd-noor.github.io/posts/functional_pipeline_go/</guid><description>&lt;h1 id="functional-pipeline-in-go"&gt;
+ Functional pipeline in Go
+ &lt;a class="heading-link" href="#functional-pipeline-in-go"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Ref:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/asd-noor/aide" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/asd-noor/aide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://preslav.me/2021/09/04/generic-golang-pipelines/" class="external-link" target="_blank" rel="noopener"&gt;https://preslav.me/2021/09/04/generic-golang-pipelines/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Demo Post</title><link>https://asd-noor.github.io/posts/demo/</link><pubDate>Tue, 09 Sep 2025 13:29:59 +0600</pubDate><guid>https://asd-noor.github.io/posts/demo/</guid><description>&lt;h1 id="first-post"&gt;
  First Post
  &lt;a class="heading-link" href="#first-post"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
