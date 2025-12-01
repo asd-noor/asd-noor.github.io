@@ -1,1 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source Software on Asaduzzaman Noor</title><link>https://asd-noor.github.io/oss/</link><description>Recent content in Open Source Software on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate/><atom:link href="https://asd-noor.github.io/oss/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source Software on Asaduzzaman Noor</title><link>https://asd-noor.github.io/oss/</link><description>Recent content in Open Source Software on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Dec 2025 19:57:58 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/oss/index.xml" rel="self" type="application/rss+xml"/><item><title>httpyac-nvim (Neovim plugin)</title><link>https://asd-noor.github.io/oss/httpyac-nvim/</link><pubDate>Mon, 01 Dec 2025 19:57:58 +0600</pubDate><guid>https://asd-noor.github.io/oss/httpyac-nvim/</guid><description>&lt;h1 id="httpyac-nvim"&gt;
+ httpyac-nvim
+ &lt;a class="heading-link" href="#httpyac-nvim"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;A NeoVim wrapper plugin for &lt;a href="https://httpyac.github.io/" class="external-link" target="_blank" rel="noopener"&gt;httpyac&lt;/a&gt; CLI - Send HTTP requests from &lt;code&gt;.http&lt;/code&gt; files directly within NeoVim with async execution and dedicated output buffer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Source: &lt;a href="https://github.com/asd-noor/httpyac-nvim" class="external-link" target="_blank" rel="noopener"&gt;asd-noor/httpyac-nvim&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="features"&gt;
+ Features
+ &lt;a class="heading-link" href="#features"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;⚡ &lt;strong&gt;Async Execution&lt;/strong&gt; - Non-blocking HTTP requests using &lt;code&gt;vim.uv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;Send Requests&lt;/strong&gt; - Execute request at cursor or all requests in buffer&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;Syntax Highlighting&lt;/strong&gt; - Color-coded HTTP responses with status codes&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;Fuzzy Navigation&lt;/strong&gt; - Jump to requests/variables with integrated picker&lt;/li&gt;
+&lt;li&gt;🌍 &lt;strong&gt;Environment Management&lt;/strong&gt; - Switch between dev/staging/prod environments&lt;/li&gt;
+&lt;li&gt;📤 &lt;strong&gt;Dedicated Output&lt;/strong&gt; - Persistent vertical split buffer for responses&lt;/li&gt;
+&lt;li&gt;🔌 &lt;strong&gt;Seamless Integration&lt;/strong&gt; - Works with snacks.nvim and which-key.nvim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="requirements"&gt;
+ Requirements
+ &lt;a class="heading-link" href="#requirements"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="required"&gt;
+ Required
+ &lt;a class="heading-link" href="#required"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NeoVim&lt;/strong&gt; 0.10+ (for &lt;code&gt;vim.uv&lt;/code&gt; support)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://httpyac.github.io/" class="external-link" target="_blank" rel="noopener"&gt;httpyac&lt;/a&gt;&lt;/strong&gt; CLI tool
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g httpyac
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# or&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn global add httpyac
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/folke/snacks.nvim" class="external-link" target="_blank" rel="noopener"&gt;snacks.nvim&lt;/a&gt;&lt;/strong&gt; - For pickers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/folke/which-key.nvim" class="external-link" target="_blank" rel="noopener"&gt;which-key.nvim&lt;/a&gt;&lt;/strong&gt; - For keymap registration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="optional"&gt;
+ Optional
+ &lt;a class="heading-link" href="#optional"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Treesitter parser for &lt;code&gt;http&lt;/code&gt; files (recommended for better syntax highlighting in source files)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="installation"&gt;
+ Installation
+ &lt;a class="heading-link" href="#installation"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="using-lazynvim"&gt;
+ Using &lt;a href="https://github.com/folke/lazy.nvim" class="external-link" target="_blank" rel="noopener"&gt;lazy.nvim&lt;/a&gt;
+ &lt;a class="heading-link" href="#using-lazynvim"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-lua" data-lang="lua"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;asd-noor/httpyac-nvim&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dependencies &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;folke/snacks.nvim&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;folke/which-key.nvim&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;nvim-treesitter/nvim-treesitter&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; opts &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ensure_installed &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; { &lt;span style="color:#a5d6ff"&gt;&amp;#34;http&amp;#34;&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ft &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;http&amp;#34;&lt;/span&gt;, &lt;span style="color:#8b949e;font-style:italic"&gt;-- Load on http filetype&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; config &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; require(&lt;span style="color:#a5d6ff"&gt;&amp;#34;httpyac-nvim&amp;#34;&lt;/span&gt;).setup({})
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;end&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="manual-installation"&gt;
+ Manual Installation
+ &lt;a class="heading-link" href="#manual-installation"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone repository to your NeoVim plugin directory:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/noor/httpyac-nvim.git ~/.local/share/nvim/site/pack/plugins/start/httpyac-nvim
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Ensure dependencies are installed&lt;/li&gt;
+&lt;li&gt;Restart NeoVim&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="setup"&gt;
+ Setup
+ &lt;a class="heading-link" href="#setup"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Basic setup (optional - plugin auto-initializes):&lt;/p&gt;</description></item></channel></rss>
