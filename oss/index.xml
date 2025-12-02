@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source Software on Asaduzzaman Noor</title><link>https://asd-noor.github.io/oss/</link><description>Recent content in Open Source Software on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Dec 2025 19:57:58 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/oss/index.xml" rel="self" type="application/rss+xml"/><item><title>httpyac-nvim (Neovim plugin)</title><link>https://asd-noor.github.io/oss/httpyac-nvim/</link><pubDate>Mon, 01 Dec 2025 19:57:58 +0600</pubDate><guid>https://asd-noor.github.io/oss/httpyac-nvim/</guid><description>&lt;h1 id="httpyac-nvim"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source Software on Asaduzzaman Noor</title><link>https://asd-noor.github.io/oss/</link><description>Recent content in Open Source Software on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Dec 2025 19:57:18 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/oss/index.xml" rel="self" type="application/rss+xml"/><item><title>httpyac-nvim (Neovim plugin)</title><link>https://asd-noor.github.io/oss/httpyac_nvim/</link><pubDate>Mon, 01 Dec 2025 19:57:18 +0600</pubDate><guid>https://asd-noor.github.io/oss/httpyac_nvim/</guid><description>&lt;h1 id="httpyac-nvim"&gt;
  httpyac-nvim
  &lt;a class="heading-link" href="#httpyac-nvim"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -111,4 +111,31 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Basic setup (optional - plugin auto-initializes):&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Basic setup (optional - plugin auto-initializes):&lt;/p&gt;</description></item><item><title>Lumos</title><link>https://asd-noor.github.io/oss/lumos/</link><pubDate>Wed, 26 Nov 2025 20:57:37 +0600</pubDate><guid>https://asd-noor.github.io/oss/lumos/</guid><description>&lt;h1 id="lumos"&gt;
+ Lumos
+ &lt;a class="heading-link" href="#lumos"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Development ongoing.&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>MemoryHub</title><link>https://asd-noor.github.io/oss/memoryhub/</link><pubDate>Tue, 11 Nov 2025 20:57:50 +0600</pubDate><guid>https://asd-noor.github.io/oss/memoryhub/</guid><description>&lt;h1 id="memoryhub"&gt;
+ MemoryHub
+ &lt;a class="heading-link" href="#memoryhub"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Development ongoing.&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>HTTPostie</title><link>https://asd-noor.github.io/oss/httpostie/</link><pubDate>Sat, 04 Oct 2025 21:17:58 +0600</pubDate><guid>https://asd-noor.github.io/oss/httpostie/</guid><description>&lt;h1 id="httpostie"&gt;
+ HTTPostie
+ &lt;a class="heading-link" href="#httpostie"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Development ongoing.&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

@@ -1,0 +1,285 @@
+<!doctype html><html lang=en><head><title>httpyac-nvim (Neovim plugin) · Asaduzzaman Noor</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Asaduzzaman Noor"><meta name=description content='
+  httpyac-nvim
+  
+    
+    Link to heading
+  
+
+A NeoVim wrapper plugin for httpyac CLI - Send HTTP requests from .http files directly within NeoVim with async execution and dedicated output buffer.
+
+Source: asd-noor/httpyac-nvim
+
+
+  Features
+  
+    
+    Link to heading
+  
+
+
+⚡ Async Execution - Non-blocking HTTP requests using vim.uv
+📝 Send Requests - Execute request at cursor or all requests in buffer
+🎨 Syntax Highlighting - Color-coded HTTP responses with status codes
+🔍 Fuzzy Navigation - Jump to requests/variables with integrated picker
+🌍 Environment Management - Switch between dev/staging/prod environments
+📤 Dedicated Output - Persistent vertical split buffer for responses
+🔌 Seamless Integration - Works with snacks.nvim and which-key.nvim
+
+
+  Requirements
+  
+    
+    Link to heading
+  
+
+
+  Required
+  
+    
+    Link to heading
+  
+
+
+NeoVim 0.10+ (for vim.uv support)
+httpyac CLI tool
+npm install -g httpyac
+# or
+yarn global add httpyac
+
+snacks.nvim - For pickers
+which-key.nvim - For keymap registration
+
+
+  Optional
+  
+    
+    Link to heading
+  
+
+
+Treesitter parser for http files (recommended for better syntax highlighting in source files)
+
+
+  Installation
+  
+    
+    Link to heading
+  
+
+
+  Using lazy.nvim
+  
+    
+    Link to heading
+  
+
+{
+  "asd-noor/httpyac-nvim",
+  dependencies = {
+    "folke/snacks.nvim",
+    "folke/which-key.nvim",
+    {
+        "nvim-treesitter/nvim-treesitter",
+        opts = {
+            ensure_installed = { "http" }
+        }
+    }
+  },
+  ft = "http", -- Load on http filetype
+  config = function()
+    require("httpyac-nvim").setup({})
+  end,
+}
+
+  Manual Installation
+  
+    
+    Link to heading
+  
+
+
+Clone repository to your NeoVim plugin directory:
+git clone https://github.com/noor/httpyac-nvim.git ~/.local/share/nvim/site/pack/plugins/start/httpyac-nvim
+
+Ensure dependencies are installed
+Restart NeoVim
+
+
+  Setup
+  
+    
+    Link to heading
+  
+
+Basic setup (optional - plugin auto-initializes):'><meta name=keywords content="blog,personal,developer,programmer,engineer"><meta name=twitter:card content="summary"><meta name=twitter:title content="httpyac-nvim (Neovim plugin)"><meta name=twitter:description content='httpyac-nvim Link to heading A NeoVim wrapper plugin for httpyac CLI - Send HTTP requests from .http files directly within NeoVim with async execution and dedicated output buffer.
+Source: asd-noor/httpyac-nvim
+Features Link to heading ⚡ Async Execution - Non-blocking HTTP requests using vim.uv 📝 Send Requests - Execute request at cursor or all requests in buffer 🎨 Syntax Highlighting - Color-coded HTTP responses with status codes 🔍 Fuzzy Navigation - Jump to requests/variables with integrated picker 🌍 Environment Management - Switch between dev/staging/prod environments 📤 Dedicated Output - Persistent vertical split buffer for responses 🔌 Seamless Integration - Works with snacks.nvim and which-key.nvim Requirements Link to heading Required Link to heading NeoVim 0.10+ (for vim.uv support) httpyac CLI tool npm install -g httpyac # or yarn global add httpyac snacks.nvim - For pickers which-key.nvim - For keymap registration Optional Link to heading Treesitter parser for http files (recommended for better syntax highlighting in source files) Installation Link to heading Using lazy.nvim Link to heading { "asd-noor/httpyac-nvim", dependencies = { "folke/snacks.nvim", "folke/which-key.nvim", { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = { "http" } } } }, ft = "http", -- Load on http filetype config = function() require("httpyac-nvim").setup({}) end, } Manual Installation Link to heading Clone repository to your NeoVim plugin directory: git clone https://github.com/noor/httpyac-nvim.git ~/.local/share/nvim/site/pack/plugins/start/httpyac-nvim Ensure dependencies are installed Restart NeoVim Setup Link to heading Basic setup (optional - plugin auto-initializes):'><meta property="og:url" content="https://asd-noor.github.io/oss/httpyac_nvim/"><meta property="og:site_name" content="Asaduzzaman Noor"><meta property="og:title" content="httpyac-nvim (Neovim plugin)"><meta property="og:description" content='httpyac-nvim Link to heading A NeoVim wrapper plugin for httpyac CLI - Send HTTP requests from .http files directly within NeoVim with async execution and dedicated output buffer.
+Source: asd-noor/httpyac-nvim
+Features Link to heading ⚡ Async Execution - Non-blocking HTTP requests using vim.uv 📝 Send Requests - Execute request at cursor or all requests in buffer 🎨 Syntax Highlighting - Color-coded HTTP responses with status codes 🔍 Fuzzy Navigation - Jump to requests/variables with integrated picker 🌍 Environment Management - Switch between dev/staging/prod environments 📤 Dedicated Output - Persistent vertical split buffer for responses 🔌 Seamless Integration - Works with snacks.nvim and which-key.nvim Requirements Link to heading Required Link to heading NeoVim 0.10+ (for vim.uv support) httpyac CLI tool npm install -g httpyac # or yarn global add httpyac snacks.nvim - For pickers which-key.nvim - For keymap registration Optional Link to heading Treesitter parser for http files (recommended for better syntax highlighting in source files) Installation Link to heading Using lazy.nvim Link to heading { "asd-noor/httpyac-nvim", dependencies = { "folke/snacks.nvim", "folke/which-key.nvim", { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = { "http" } } } }, ft = "http", -- Load on http filetype config = function() require("httpyac-nvim").setup({}) end, } Manual Installation Link to heading Clone repository to your NeoVim plugin directory: git clone https://github.com/noor/httpyac-nvim.git ~/.local/share/nvim/site/pack/plugins/start/httpyac-nvim Ensure dependencies are installed Restart NeoVim Setup Link to heading Basic setup (optional - plugin auto-initializes):'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="oss"><meta property="article:published_time" content="2025-12-01T19:57:18+06:00"><meta property="article:modified_time" content="2025-12-01T19:57:18+06:00"><link rel=canonical href=https://asd-noor.github.io/oss/httpyac_nvim/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=stylesheet href=/style/restore_list.min.16410769dcb490d7720a682ae2e8f7ab5aeef3328576bb62d9f18dc6606ad60e.css integrity="sha256-FkEHady0kNdyCmgq4uj3q1ru8zKFdrti2fGNxmBq1g4=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/favicon/favicon.svg sizes=any><link rel=icon type=image/png href=/favicon/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/favicon/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://asd-noor.github.io/>Asaduzzaman Noor
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/about-me/>About Me</a></li><li class=navigation-item><a class=navigation-link href=/oss/>OSS</a></li></ul></section></nav><div class=content><section class="container page"><article><header><h1 class=title><a class=title-link href=https://asd-noor.github.io/oss/httpyac_nvim/>httpyac-nvim (Neovim plugin)</a></h1></header><h1 id=httpyac-nvim>httpyac-nvim
+<a class=heading-link href=#httpyac-nvim><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>A NeoVim wrapper plugin for <a href=https://httpyac.github.io/ class=external-link target=_blank rel=noopener>httpyac</a> CLI - Send HTTP requests from <code>.http</code> files directly within NeoVim with async execution and dedicated output buffer.</p><blockquote><p>Source: <a href=https://github.com/asd-noor/httpyac-nvim class=external-link target=_blank rel=noopener>asd-noor/httpyac-nvim</a></p></blockquote><h2 id=features>Features
+<a class=heading-link href=#features><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li>⚡ <strong>Async Execution</strong> - Non-blocking HTTP requests using <code>vim.uv</code></li><li>📝 <strong>Send Requests</strong> - Execute request at cursor or all requests in buffer</li><li>🎨 <strong>Syntax Highlighting</strong> - Color-coded HTTP responses with status codes</li><li>🔍 <strong>Fuzzy Navigation</strong> - Jump to requests/variables with integrated picker</li><li>🌍 <strong>Environment Management</strong> - Switch between dev/staging/prod environments</li><li>📤 <strong>Dedicated Output</strong> - Persistent vertical split buffer for responses</li><li>🔌 <strong>Seamless Integration</strong> - Works with snacks.nvim and which-key.nvim</li></ul><h2 id=requirements>Requirements
+<a class=heading-link href=#requirements><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=required>Required
+<a class=heading-link href=#required><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><ul><li><strong>NeoVim</strong> 0.10+ (for <code>vim.uv</code> support)</li><li><strong><a href=https://httpyac.github.io/ class=external-link target=_blank rel=noopener>httpyac</a></strong> CLI tool<div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npm install -g httpyac
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># or</span>
+</span></span><span style=display:flex><span>yarn global add httpyac
+</span></span></code></pre></div></li><li><strong><a href=https://github.com/folke/snacks.nvim class=external-link target=_blank rel=noopener>snacks.nvim</a></strong> - For pickers</li><li><strong><a href=https://github.com/folke/which-key.nvim class=external-link target=_blank rel=noopener>which-key.nvim</a></strong> - For keymap registration</li></ul><h3 id=optional>Optional
+<a class=heading-link href=#optional><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><ul><li>Treesitter parser for <code>http</code> files (recommended for better syntax highlighting in source files)</li></ul><h2 id=installation>Installation
+<a class=heading-link href=#installation><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=using-lazynvim>Using <a href=https://github.com/folke/lazy.nvim class=external-link target=_blank rel=noopener>lazy.nvim</a>
+<a class=heading-link href=#using-lazynvim><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  <span style=color:#a5d6ff>&#34;asd-noor/httpyac-nvim&#34;</span>,
+</span></span><span style=display:flex><span>  dependencies <span style=color:#ff7b72;font-weight:700>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a5d6ff>&#34;folke/snacks.nvim&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a5d6ff>&#34;folke/which-key.nvim&#34;</span>,
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#a5d6ff>&#34;nvim-treesitter/nvim-treesitter&#34;</span>,
+</span></span><span style=display:flex><span>        opts <span style=color:#ff7b72;font-weight:700>=</span> {
+</span></span><span style=display:flex><span>            ensure_installed <span style=color:#ff7b72;font-weight:700>=</span> { <span style=color:#a5d6ff>&#34;http&#34;</span> }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  ft <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;http&#34;</span>, <span style=color:#8b949e;font-style:italic>-- Load on http filetype</span>
+</span></span><span style=display:flex><span>  config <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span>()
+</span></span><span style=display:flex><span>    require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>).setup({})
+</span></span><span style=display:flex><span>  <span style=color:#ff7b72>end</span>,
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=manual-installation>Manual Installation
+<a class=heading-link href=#manual-installation><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><ol><li>Clone repository to your NeoVim plugin directory:<div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git clone https://github.com/noor/httpyac-nvim.git ~/.local/share/nvim/site/pack/plugins/start/httpyac-nvim
+</span></span></code></pre></div></li><li>Ensure dependencies are installed</li><li>Restart NeoVim</li></ol><h2 id=setup>Setup
+<a class=heading-link href=#setup><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Basic setup (optional - plugin auto-initializes):</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span>require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>).setup({})
+</span></span></code></pre></div><h2 id=usage>Usage
+<a class=heading-link href=#usage><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=quick-start>Quick Start
+<a class=heading-link href=#quick-start><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><ol><li>Create a <code>.http</code> file:</li></ol><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#f85149>### Simple GET request
+</span></span></span><span style=display:flex><span><span style=color:#f85149>GET https://httpbin.org/get
+</span></span></span><span style=display:flex><span><span style=color:#f85149>
+</span></span></span><span style=display:flex><span><span style=color:#f85149>### POST with JSON body
+</span></span></span><span style=display:flex><span><span style=color:#f85149>POST https://httpbin.org/post
+</span></span></span><span style=display:flex><span><span style=color:#f85149>Content-Type: application/json
+</span></span></span><span style=display:flex><span><span style=color:#f85149>
+</span></span></span><span style=display:flex><span><span style=color:#f85149>{
+</span></span></span><span style=display:flex><span><span style=color:#f85149>  &#34;name&#34;: &#34;John Doe&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#f85149>  &#34;email&#34;: &#34;john@example.com&#34;
+</span></span></span><span style=display:flex><span><span style=color:#f85149>}
+</span></span></span><span style=display:flex><span><span style=color:#f85149>
+</span></span></span><span style=display:flex><span><span style=color:#f85149>### Using variables
+</span></span></span><span style=display:flex><span><span style=color:#f85149>@baseUrl = https://api.github.com
+</span></span></span><span style=display:flex><span><span style=color:#f85149>@username = octocat
+</span></span></span><span style=display:flex><span><span style=color:#f85149>
+</span></span></span><span style=display:flex><span><span style=color:#f85149>GET {{baseUrl}}/users/{{username}}
+</span></span></span></code></pre></div><ol start=2><li><p>Open in NeoVim:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>nvim requests.http
+</span></span></code></pre></div></li><li><p>Send requests:</p><ul><li>Position cursor on a request line</li><li>Press <code>&lt;leader>Rs</code> to send request at cursor</li><li>Press <code>&lt;leader>RS</code> to send all requests in buffer</li></ul></li></ol><h3 id=default-keymaps>Default Keymaps
+<a class=heading-link href=#default-keymaps><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>All keymaps are buffer-local and only active in <code>.http</code> files:</p><table><thead><tr><th>Keymap</th><th>Action</th><th>Description</th></tr></thead><tbody><tr><td><code>&lt;leader>Rs</code></td><td><code>send_request_at_cursor()</code></td><td>Send HTTP request at cursor position</td></tr><tr><td><code>&lt;leader>RS</code></td><td><code>send_all_requests()</code></td><td>Send all HTTP requests in buffer</td></tr><tr><td><code>&lt;leader>Re</code></td><td><code>view_custom_env()</code></td><td>View current httpyac environment</td></tr><tr><td><code>&lt;leader>RE</code></td><td><code>set_custom_env()</code></td><td>Set httpyac environment file</td></tr><tr><td><code>&lt;leader>ss</code></td><td><code>jump_to_request()</code></td><td>Jump to HTTP request (fuzzy picker)</td></tr><tr><td><code>&lt;leader>sv</code></td><td><code>jump_to_variable()</code></td><td>Jump to HTTP variable (fuzzy picker)</td></tr></tbody></table><blockquote><p><strong>Note:</strong> Default leader key is usually <code>&lt;Space></code></p></blockquote><h3 id=lua-api>Lua API
+<a class=heading-link href=#lua-api><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>You can call functions directly from Lua:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#ff7b72>local</span> httpyac <span style=color:#ff7b72;font-weight:700>=</span> require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Send request at cursor</span>
+</span></span><span style=display:flex><span>httpyac.send_request_at_cursor()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Send request with custom options</span>
+</span></span><span style=display:flex><span>httpyac.send_request_at_cursor({<span style=color:#a5d6ff>&#34;--verbose&#34;</span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Send all requests</span>
+</span></span><span style=display:flex><span>httpyac.send_all_requests()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Environment management</span>
+</span></span><span style=display:flex><span>httpyac.set_custom_env()
+</span></span><span style=display:flex><span>httpyac.view_custom_env()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Navigation</span>
+</span></span><span style=display:flex><span>httpyac.jump_to_request()
+</span></span><span style=display:flex><span>httpyac.jump_to_variable()
+</span></span></code></pre></div><h2 id=environment-files>Environment Files
+<a class=heading-link href=#environment-files><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>httpyac supports environment files for managing variables across different contexts (dev, staging, production).</p><h3 id=setting-environment>Setting Environment
+<a class=heading-link href=#setting-environment><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><strong>Method 1: Using keymap</strong></p><pre tabindex=0><code>&lt;leader&gt;RE  &#34; Opens file picker to select environment file
+</code></pre><p><strong>Method 2: Using Lua function</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span>require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>).set_custom_env()
+</span></span></code></pre></div><p><strong>Method 3: Using environment variable</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>export <span style=color:#79c0ff>HTTPYAC_ENV</span><span style=color:#ff7b72;font-weight:700>=</span>/path/to/httpyac.config.js
+</span></span><span style=display:flex><span>nvim requests.http
+</span></span></code></pre></div><h3 id=environment-file-example>Environment File Example
+<a class=heading-link href=#environment-file-example><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Create <code>httpyac.config.js</code>:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>module.exports <span style=color:#ff7b72;font-weight:700>=</span> {
+</span></span><span style=display:flex><span>  environments<span style=color:#ff7b72;font-weight:700>:</span> {
+</span></span><span style=display:flex><span>    dev<span style=color:#ff7b72;font-weight:700>:</span> {
+</span></span><span style=display:flex><span>      baseUrl<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;http://localhost:3000&#34;</span>,
+</span></span><span style=display:flex><span>      token<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;dev-token-123&#34;</span>
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    staging<span style=color:#ff7b72;font-weight:700>:</span> {
+</span></span><span style=display:flex><span>      baseUrl<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;https://staging.api.example.com&#34;</span>,
+</span></span><span style=display:flex><span>      token<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;staging-token-456&#34;</span>
+</span></span><span style=display:flex><span>    },
+</span></span><span style=display:flex><span>    prod<span style=color:#ff7b72;font-weight:700>:</span> {
+</span></span><span style=display:flex><span>      baseUrl<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;https://api.example.com&#34;</span>,
+</span></span><span style=display:flex><span>      token<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;prod-token-789&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><p>Use in your <code>.http</code> file:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#f85149>GET {{baseUrl}}/api/users
+</span></span></span><span style=display:flex><span><span style=color:#f85149>Authorization: Bearer {{token}}
+</span></span></span></code></pre></div><p>See <a href=https://httpyac.github.io/guide/environments.html class=external-link target=_blank rel=noopener>httpyac documentation</a> for more details.</p><h2 id=syntax-highlighting>Syntax Highlighting
+<a class=heading-link href=#syntax-highlighting><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>The plugin provides custom syntax highlighting for HTTP responses in the output buffer (<code>HTTPYAC_OUT</code>):</p><ul><li><strong>HTTP Methods</strong> - GET, POST, PUT, DELETE, etc.</li><li><strong>Status Codes</strong> - Color-coded by category:<ul><li><code>2xx</code> Success (green)</li><li><code>3xx</code> Redirect (cyan)</li><li><code>4xx</code> Client Error (yellow)</li><li><code>5xx</code> Server Error (red)</li></ul></li><li><strong>Headers</strong> - Header names and values</li><li><strong>JSON</strong> - Strings, numbers, booleans</li><li><strong>URLs</strong> - Request paths</li></ul><p>For <code>.http</code> source files, we recommend using <a href=https://github.com/nvim-treesitter/nvim-treesitter class=external-link target=_blank rel=noopener>Treesitter</a> with the <code>http</code> parser.</p><h2 id=health-check>Health Check
+<a class=heading-link href=#health-check><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Verify all dependencies are properly installed:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>:checkhealth httpyac-nvim
+</span></span></code></pre></div><p>The health check verifies:</p><ul><li>✓ httpyac CLI installation and version</li><li>✓ snacks.nvim availability</li><li>✓ which-key.nvim availability</li><li>✓ NeoVim version (0.10+)</li><li>✓ HTTPYAC_ENV status</li></ul><h2 id=advanced-usage>Advanced Usage
+<a class=heading-link href=#advanced-usage><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=custom-httpyac-cli-options>Custom httpyac CLI Options
+<a class=heading-link href=#custom-httpyac-cli-options><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Pass additional options to httpyac CLI:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Send with verbose output</span>
+</span></span><span style=display:flex><span>require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>).send_request_at_cursor({<span style=color:#a5d6ff>&#34;--verbose&#34;</span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- Send with specific output format</span>
+</span></span><span style=display:flex><span>require(<span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>).send_request_at_cursor({<span style=color:#a5d6ff>&#34;--output&#34;</span>, <span style=color:#a5d6ff>&#34;body&#34;</span>})
+</span></span></code></pre></div><h3 id=multiple-environments>Multiple Environments
+<a class=heading-link href=#multiple-environments><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Switch environments on-the-fly:</p><ol><li>Press <code>&lt;leader>RE</code></li><li>Select environment file from picker</li><li>Press <code>&lt;leader>Re</code> to verify current environment</li><li>Send requests - they&rsquo;ll use the selected environment</li></ol><h2 id=troubleshooting>Troubleshooting
+<a class=heading-link href=#troubleshooting><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=plugin-doesnt-load-for-http-files>Plugin doesn&rsquo;t load for .http files
+<a class=heading-link href=#plugin-doesnt-load-for-http-files><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><strong>Check:</strong></p><ol><li>File has <code>.http</code> extension or <code>:set filetype=http</code> manually</li><li>Dependencies are installed: <code>:Lazy</code> to check plugin status</li><li>Run <code>:checkhealth httpyac-nvim</code></li></ol><h3 id=syntax-highlighting-not-working-in-output>Syntax highlighting not working in output
+<a class=heading-link href=#syntax-highlighting-not-working-in-output><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><strong>Check:</strong></p><ol><li>Output buffer filetype: <code>:set ft?</code> (should be <code>httpyacout</code>)</li><li>File exists: <code>ls ~/.config/nvim/.../syntax/httpyacout.vim</code></li><li>Run <code>:checkhealth httpyac-nvim</code></li></ol><h3 id=httpyac-command-not-found>httpyac command not found
+<a class=heading-link href=#httpyac-command-not-found><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><strong>Install httpyac CLI:</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>npm install -g httpyac
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># Verify installation</span>
+</span></span><span style=display:flex><span>httpyac --version
+</span></span></code></pre></div><h3 id=keymaps-not-working>Keymaps not working
+<a class=heading-link href=#keymaps-not-working><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><strong>Check:</strong></p><ol><li>You&rsquo;re in a buffer with <code>filetype=http</code></li><li>which-key.nvim is installed and loaded</li><li>Try calling functions directly: <code>:lua require("httpyac-nvim").send_request_at_cursor()</code></li></ol><h2 id=contributing>Contributing
+<a class=heading-link href=#contributing><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Contributions are welcome! Please feel free to submit issues or pull requests.</p><h3 id=development-setup>Development Setup
+<a class=heading-link href=#development-setup><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>For local development:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=display:flex><span><span style=color:#8b949e;font-style:italic>-- In your init.lua</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  dir <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;/path/to/httpyac-nvim&#34;</span>,
+</span></span><span style=display:flex><span>  name <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;httpyac-nvim&#34;</span>,
+</span></span><span style=display:flex><span>  dependencies <span style=color:#ff7b72;font-weight:700>=</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a5d6ff>&#34;folke/snacks.nvim&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#a5d6ff>&#34;folke/which-key.nvim&#34;</span>,
+</span></span><span style=display:flex><span>  },
+</span></span><span style=display:flex><span>  ft <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;http&#34;</span>,
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=license>License
+<a class=heading-link href=#license><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>MIT License - see LICENSE file for details</p><h2 id=related-projects>Related Projects
+<a class=heading-link href=#related-projects><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><a href=https://httpyac.github.io/ class=external-link target=_blank rel=noopener>httpyac</a> - The underlying CLI tool</li><li><a href=https://github.com/rest-nvim/rest.nvim class=external-link target=_blank rel=noopener>rest.nvim</a> - Alternative HTTP client for NeoVim</li><li><a href=https://github.com/mistweaverco/kulala.nvim class=external-link target=_blank rel=noopener>kulala.nvim</a> - Another .http file client</li></ul><h2 id=credits>Credits
+<a class=heading-link href=#credits><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li>Built on top of <a href=https://httpyac.github.io/ class=external-link target=_blank rel=noopener>httpyac</a> by Andreas Wassner</li><li>Inspired from <a href=https://github.com/abidibo/nvim-httpyac/ class=external-link target=_blank rel=noopener>nvim-httpyac</a></li><li>Uses <a href=https://github.com/folke/snacks.nvim class=external-link target=_blank rel=noopener>snacks.nvim</a> for pickers</li><li>Uses <a href=https://github.com/folke/which-key.nvim class=external-link target=_blank rel=noopener>which-key.nvim</a> for keybindings</li></ul><hr><p><strong>Note:</strong> This plugin is a wrapper around the httpyac CLI. For httpyac-specific features and advanced usage, refer to the <a href=https://httpyac.github.io/ class=external-link target=_blank rel=noopener>official httpyac documentation</a>.</p></article></section></div><footer class=footer><section class=container>©
+2025
+Asaduzzaman Noor
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>
