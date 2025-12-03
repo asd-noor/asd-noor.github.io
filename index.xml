@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asaduzzaman Noor</title><link>https://asd-noor.github.io/</link><description>Recent content on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Dec 2025 21:05:36 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Dingo!!</title><link>https://asd-noor.github.io/posts/dingo_go/</link><pubDate>Mon, 01 Dec 2025 21:05:36 +0600</pubDate><guid>https://asd-noor.github.io/posts/dingo_go/</guid><description>&lt;h1 id="dingo-new-meta-language-in-town"&gt;
- Dingo: New Meta-language In Town
- &lt;a class="heading-link" href="#dingo-new-meta-language-in-town"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asaduzzaman Noor</title><link>https://asd-noor.github.io/</link><description>Recent content on Asaduzzaman Noor</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 03 Dec 2025 21:29:59 +0600</lastBuildDate><atom:link href="https://asd-noor.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Local Container Registry</title><link>https://asd-noor.github.io/posts/local_container_registry/</link><pubDate>Wed, 03 Dec 2025 21:29:59 +0600</pubDate><guid>https://asd-noor.github.io/posts/local_container_registry/</guid><description>&lt;h1 id="intro"&gt;
+ Intro
+ &lt;a class="heading-link" href="#intro"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>Local Container Registry</title><link>https://asd-noor.github.io/oss/local_container_registry/</link><pubDate>Wed, 03 Dec 2025 19:57:37 +0600</pubDate><guid>https://asd-noor.github.io/oss/local_container_registry/</guid><description>&lt;h1 id="local-registry"&gt;
+ local-registry
+ &lt;a class="heading-link" href="#local-registry"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
@@ -120,43 +129,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Basic setup (optional - plugin auto-initializes):&lt;/p&gt;</description></item><item><title>Lumos</title><link>https://asd-noor.github.io/oss/lumos/</link><pubDate>Wed, 26 Nov 2025 20:57:37 +0600</pubDate><guid>https://asd-noor.github.io/oss/lumos/</guid><description>&lt;h1 id="lumos"&gt;
- Lumos
- &lt;a class="heading-link" href="#lumos"&gt;
- &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
- &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
- &lt;/a&gt;
-&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Development ongoing.&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>MemoryHub</title><link>https://asd-noor.github.io/oss/memoryhub/</link><pubDate>Tue, 11 Nov 2025 20:57:50 +0600</pubDate><guid>https://asd-noor.github.io/oss/memoryhub/</guid><description>&lt;h1 id="memoryhub"&gt;
- MemoryHub
- &lt;a class="heading-link" href="#memoryhub"&gt;
- &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
- &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
- &lt;/a&gt;
-&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Development ongoing.&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>Unidiomatic Go</title><link>https://asd-noor.github.io/posts/unidiomatic_go/</link><pubDate>Wed, 08 Oct 2025 21:01:26 +0600</pubDate><guid>https://asd-noor.github.io/posts/unidiomatic_go/</guid><description>&lt;h1 id="go-simple-but-too-verbose"&gt;
- Go, Simple but too verbose?
- &lt;a class="heading-link" href="#go-simple-but-too-verbose"&gt;
- &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
- &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
- &lt;/a&gt;
-&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>HTTPostie</title><link>https://asd-noor.github.io/oss/httpostie/</link><pubDate>Sat, 04 Oct 2025 21:17:58 +0600</pubDate><guid>https://asd-noor.github.io/oss/httpostie/</guid><description>&lt;h1 id="httpostie"&gt;
- HTTPostie
- &lt;a class="heading-link" href="#httpostie"&gt;
- &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
- &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
- &lt;/a&gt;
-&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Development ongoing.&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>Use Git as a Pro</title><link>https://asd-noor.github.io/posts/git_practice_prod/</link><pubDate>Tue, 09 Sep 2025 21:29:59 +0600</pubDate><guid>https://asd-noor.github.io/posts/git_practice_prod/</guid><description>&lt;h1 id="intro"&gt;
+&lt;p&gt;Basic setup (optional - plugin auto-initializes):&lt;/p&gt;</description></item><item><title>Use Git as a Pro</title><link>https://asd-noor.github.io/posts/git_practice_prod/</link><pubDate>Tue, 09 Sep 2025 21:29:59 +0600</pubDate><guid>https://asd-noor.github.io/posts/git_practice_prod/</guid><description>&lt;h1 id="intro"&gt;
  Intro
  &lt;a class="heading-link" href="#intro"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
